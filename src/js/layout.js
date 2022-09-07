@@ -8,7 +8,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
-import Navbar from "./component/navbar.js";
+import { Navbar } from "./component/navbar.js";
 import { Footer } from "./component/footer.js";
 
 //create your first component
@@ -25,20 +25,20 @@ const Layout = () => {
           <Switch>
             <Route exact path="/">
               <Home />
-            </Route>
+            </Route>{" "}
             <Route exact path="/demo">
               <Demo />
-            </Route>                    
+            </Route>{" "}
             <Route exact path="/single/:theid">
               <Single />
-            </Route>
+            </Route>{" "}
             <Route>
-              <h1> Not found! </h1>
-            </Route>
-          </Switch>
+              <h1> Not found! </h1>{" "}
+            </Route>{" "}
+          </Switch>{" "}
           <Footer />
-        </ScrollToTop>
-      </BrowserRouter>
+        </ScrollToTop>{" "}
+      </BrowserRouter>{" "}
     </div>
   );
 };

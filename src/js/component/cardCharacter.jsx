@@ -1,0 +1,19 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const CardCharacter = () => {
+  return (
+    
+    <div className="card" style={{width: "18rem"}} >
+  <img src="https://imgwoman.elperiodico.com/73/3c/c0/ewan-mcgregor-caracterizado-obi-wan-kenobi.jpg" className="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">Nombre</h5>
+    <p className="card-text">Color de pelo</p>
+    <Link to="#" className="btn btn-primary">Detalles </Link>
+  </div>
+</div>
+
+  );
+};
+
+export default CardCharacter;
