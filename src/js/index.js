@@ -11,6 +11,6 @@ import Layout from "./layout";
 
 //render your react application
 ReactDOM.render( 
-    <BrowserRouter> 
-< Home /> 
+ <BrowserRouter> 
+ < Layout /> 
 </BrowserRouter> , document.querySelector("#app"));
