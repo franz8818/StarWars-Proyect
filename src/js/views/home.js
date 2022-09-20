@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/home.css";
 import CardCharacter from "../component/cardCharacter.jsx";
 import CardPlanets from "../component/cardPlanets.jsx";
+// import DetailsCharacters from "../component/detailsCharacters.jsx";
 
 export const Home = () => (
   <>
