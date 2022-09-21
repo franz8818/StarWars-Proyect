@@ -10,7 +10,7 @@ const CardCharacter = () => {
   <div className="card-body">
     <h5 className="card-title">Nombre</h5>
     <p className="card-text">Color de pelo</p>
-    <Link to="/home" className="btn btn-primary">¡Leer más!</Link>
+    <Link to="/details" className="btn btn-primary">¡Leer más!</Link>
   </div>
 </div>
   </> 
