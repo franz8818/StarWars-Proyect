@@ -4,7 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home.js";
 
-import { Details } from "./views/details.js";
+import Details from "./views/details.js";
 import { Single } from "./views/single.js";
 import injectContext from "./store/appContext";
 
