@@ -6,14 +6,18 @@ import { Link, useParams } from "react-router-dom";
 
 export const Home = () => (
   <>
-    <h1 className="background-color:DodgerBlue;"> Characters </h1>{" "}
-    <div className="overflow-auto d-flex container-flex">
+  <div clasName="container"> 
+  {/* //para que sirve container-flex? */}
+    <h4 className="ms-3"> Characters </h4>
+    <div className="overflow-auto d-flex"> 
+    {/* //Que es overflow-auto? */}
       <CardCharacter />
-    </div>{" "}
+    </div>
     
-    <h1> Planets </h1>{" "}
-    <div className="overflow-auto d-flex container-flex">
+    <h4 className="ms-3"> Planets </h4>
+    <div className="overflow-auto d-flex">
       <CardPlanets />
-    </div>{" "}
+    </div>
+    </div>
   </>
 );

@@ -4,16 +4,41 @@ import { Link } from "react-router-dom";
 const CardCharacter = () => {
   return (
     <>
-    <div className="d-flex p-2 bd-highlight"></div>
-    <div className="card" style={{width: "18rem"}}>
-  <img src="https://imgwoman.elperiodico.com/73/3c/c0/ewan-mcgregor-caracterizado-obi-wan-kenobi.jpg" className="card-img-top" alt="..." />
-  <div className="card-body">
-    <h5 className="card-title">Nombre</h5>
-    <p className="card-text">Color de pelo</p>
-    <Link to="/details" className="btn btn-primary">¡Leer más!</Link>
-  </div>
-</div>
-  </> 
+      <div className="d-flex p-2">
+      <div className="card m-2">
+        <img
+          src="https://media.vandalsports.com/i/1080x1080/11-2020/202011910389_1.jpg"
+          className="card-img-top"/>
+        <div className="card-body">
+          <h5 className="card-title"><b>Name</b></h5>
+          <div className="d-flex flex-column"> 
+          <span className="card-text">Gender</span>
+          <span className="card-text">Hair color</span>
+          <span className="card-text">Eye color</span>
+          </div>
+          <Link to="/details/character" className="btn btn-warning mt-3">
+          Learn More!
+          </Link>
+        </div>
+        </div> 
+        <div className="card m-2">
+        <img
+          src="https://media.vandalsports.com/i/1080x1080/11-2020/202011910389_1.jpg"
+          className="card-img-top"/>
+        <div className="card-body">
+          <h5 className="card-title"><b>Name</b></h5>
+          <div className="d-flex flex-column"> 
+          <span className="card-text">Gender</span>
+          <span className="card-text">Hair color</span>
+          <span className="card-text">Eye color</span>
+          </div>
+          <Link to="/details/character" className="btn btn-warning mt-3">
+          Learn More!
+          </Link>
+        </div>
+        </div> 
+      </div>
+    </>
   );
 };
 
