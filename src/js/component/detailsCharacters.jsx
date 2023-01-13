@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const DetailsCharacters = () => {
     return (
       <>
+      {/* este es el card de los personajes */}
     <div className="card mb-3" style={{"maxWidth": "540px"}}>
   <div className="row g-0">
     <div className="col-md-4">
