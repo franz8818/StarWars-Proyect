@@ -9,7 +9,6 @@ import { Single } from "./views/single.js";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar.js";
-import { Footer } from "./component/footer.js";
 
 //create your first component
 const Layout = () => {
@@ -36,7 +35,6 @@ const Layout = () => {
               <h1> Not found! </h1>{" "}
             </Route>{" "}
           </Switch>{" "}
-          <Footer />
         </ScrollToTop>{" "}
       </BrowserRouter>{" "}
     </div>

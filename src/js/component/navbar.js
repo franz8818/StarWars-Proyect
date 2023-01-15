@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
-    <nav className="navbar bg-dark mb-2">
+    <nav className="navbar bg-dark ">
       <Link to="/">
       <div className="ms-5"> 
       <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-StarWars.png" height="38" />
@@ -12,7 +12,7 @@ export const Navbar = () => {
       </Link>
       <div className="ml-auto"> 
       <div className="dropdown">
-  <button className="btn btn-warning dropdown-toggle mx-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button className="favorites btn btn-primary dropdown-toggle me-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Favorites
   </button>
   <ul className="dropdown-menu">
