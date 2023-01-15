@@ -1,0 +1,26 @@
+/* CONTIENE TODO LO REFERENTE A "ESTILOS" DEL NAVBAR */
+
+.dropdown-menu {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: #000000;
+}
+
+
+.dropdown-item {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: #dc3545;
+}
+
+.favorites:hover {
+    color: rgb(255, 255, 255);
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.favorites {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}

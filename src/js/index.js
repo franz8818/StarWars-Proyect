@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 //include your index.scss file into the bundle
-import "../styles/index.css"; 
+import "../styles/info.css"; 
 
 //import you r own components
 import Layout from "./layout";

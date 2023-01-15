@@ -1,0 +1,45 @@
+/* CONTIENE TODO LO REFERENTE A "ESTILOS" DE CARDS EN HOME */
+
+.character {
+    width: 9rem;
+    height: 16.5rem;
+}
+
+.planet {
+    width: 9rem;
+    height: 16.5rem;
+    margin: 8em;
+}
+
+
+.card-title {
+    padding-bottom: -30em;
+    margin: 0px;
+}
+
+.card-body {
+    padding: 5px;
+    /* want to change top margin */
+}
+
+.info {
+    font-size: 11px;
+    padding-top: -12em;
+}
+
+.botones {
+    margin-top: 5%;
+}
+
+.btn-warning {
+    width: 3rem;
+    height: 2rem;
+    font-size: 12px;
+    margin-right: 1em;
+}
+
+.btn-danger {
+    width: 3rem;
+    height: 2rem;
+    font-size: 12px;
+}

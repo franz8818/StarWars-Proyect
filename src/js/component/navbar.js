@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
-    <nav className="navbar bg-dark ">
+    <nav className="navbar bg-dark">
       <Link to="/">
       <div className="ms-5"> 
       <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-StarWars.png" height="38" />

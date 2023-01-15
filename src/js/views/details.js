@@ -1,21 +1,21 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
-import "../../styles/demo.css";
-import DetailsCharacters from "../component/detailsCharacters.jsx";
-import DetailsPlanets from "../component/detailsPlanets.jsx";
+import "../../styles/navbar.css";
+import InfoCharacters from "../component/infoCharacters.jsx";
+import InfoPlanets from "../component/infoPlanets.jsx";
 
-const Details = () => {
+const Info = () => {
   const detailsType = useParams ()
   return (
     <>
     {detailsType.type == "character" ?
-    <DetailsCharacters />
+    <InfoCharacters />
     :
-    <DetailsPlanets />
+    <InfoPlanets />
   }
     </>
   );
 };
 
-export default Details;
+export default Info;

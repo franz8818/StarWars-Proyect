@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const DetailsPlanets = () => {
+const InfoPlanets = () => {
     return (
       <>
     <div className="card mb-3" style={{"maxWidth": "540px"}}>
@@ -16,5 +16,5 @@ const DetailsPlanets = () => {
     );
   };
   
-  export default DetailsPlanets;
+  export default InfoPlanets;
   
