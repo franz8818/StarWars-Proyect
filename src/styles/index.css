@@ -6,3 +6,24 @@
     width: 10rem;
     height: 15rem;
 }
+
+.titulo {
+    margin: 0 0 0 0;
+    /* want to change top margin */
+}
+
+.card-body {
+    padding: 5px;
+    /* want to change top margin */
+}
+
+.info {
+    font-size: 11px;
+    padding-top: -12em;
+
+}
+
+.card-title {
+    padding-bottom: -30em;
+    margin: 0px;
+}

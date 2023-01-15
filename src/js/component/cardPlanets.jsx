@@ -5,7 +5,7 @@ const CardPlanets = () => {
   return (
     <>
     <div className="d-flex p-2">
-  <div className="card m-2">
+     <div className="card m-1">
         <img
           src="https://static.wikia.nocookie.net/esstarwars/images/6/61/Mustafar-TROSGG.png"
           className="card-img-top"/>
