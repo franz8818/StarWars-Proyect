@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
@@ -18,6 +18,7 @@ const Layout = () => {
 
   return (
     <div>
+      {/* FUNCIONA COMO ROUTER, MANEJANDO VISTAS, SE ENCARGA DE HACER EL MATCH */}
       <BrowserRouter basename={basename}>
         <ScrollToTop>
           <Navbar />

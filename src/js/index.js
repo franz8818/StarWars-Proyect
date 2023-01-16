@@ -1,4 +1,4 @@
-//import react into the bundle
+//import react into the bundle CONFIGURACION -> USAR BOOSTRAP O ESTILOS PROPIOS
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
