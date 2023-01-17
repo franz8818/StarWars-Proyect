@@ -6,7 +6,6 @@ export const Navbar = () => {
   //DESESTRUCTURAR LOS DOS CONCEPTOS DE flux
   const {store, actions}=useContext(Context) //3. CONSUMIR El Contexto
   
-  
   return (
 
     <>
@@ -22,6 +21,8 @@ export const Navbar = () => {
     Favorites
   </button>
   <ul className="dropdown-menu dropdown-menu-end">
+
+    
     <li><a className="dropdown-item" href="#">Action</a></li>
     <li><a className="dropdown-item" href="#">Another action</a></li>
     <li><a className="dropdown-item" href="#">Something else here</a></li>

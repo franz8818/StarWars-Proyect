@@ -1,16 +1,15 @@
 // gerState ES UN FUNCION QUE RETORNA UN OBJETO
 const getState = ({
-    getStore,
-    getActions,
-    setStore
+    getStore, // PARA INFO DE LA Store EN EL Contecto DE Flux
+    getActions, // PARA INFO DE LA Store EN EL Contecto DE Flux
+    setStore // CAMBIAR EL VALOR DE ALGUN DATO QUE TENGA EN LA Store
 }) => {
     return {
         //STORE ES UN objeto -> DEPOSITO DE estados 
         store: {
             // SE DEFINE UN STORE CON UN ARREGLO []
             favorites: [],
-            characterList: [],
-            planetList: [],
+
         },
         //ACCION ES UNA objeto-> DEPOSITO DE funciones -> PROVOCA UN CAMBIO EN EL STORE -> SE VE EN TODA MI APLICACION
         actions: {
@@ -23,19 +22,10 @@ const getState = ({
 
 
 
-            //LO VI EN UN VIDEO DE 4 GEEKS HACE UN AÑO, USARON TECH... ¿POR QUE?
-            fetchCharacter: async () => {
-                URL = "https://www.swapi.tech/api/people/";
-            },
 
 
 
-
-
-
-
-
-            //PREGUNTAR QUE ES TODO ESTE CHORRERO
+            //EJEMPLOS
             // Use getActions to call a function within a fuction
             exampleFunction: () => {
                 getActions().changeColor(0, "green");
