@@ -5,7 +5,7 @@ import "../../styles/navbar.css";
 import InfoCharacters from "../component/infoCharacters.jsx";
 import InfoPlanets from "../component/infoPlanets.jsx";
 
-const Info = () => {
+const Details = () => {
   const detailsType = useParams ()
   return (
     <>
@@ -18,4 +18,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default Details;

@@ -20,7 +20,7 @@ const CardPlanets = () => {
             <span className="card-text"><b>Eye color</b></span>
           </div>
           <div className="botones d-flex justify-content-center">
-          <Link to="/details/character" className="btn btn-warning">
+          <Link to="/details/Planet" className="btn btn-warning">
             info
           </Link>
           <button  className="btn btn-danger float-end" onClick={()=> {actions.addFav(charCard.name)}}>♥︎</button>
