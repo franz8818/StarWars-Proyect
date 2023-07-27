@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState, useEffect, useContext} from "react";
 import "../../styles/home.css";
 import CardCharacter from "../component/cardCharacter.jsx";
 import CardPlanets from "../component/cardPlanets.jsx";
 import { Link, useParams } from "react-router-dom";
+import { Context } from "../store/appContext.js";
 
 export const Home = () => (
+    const {store, actions} = useContext(Context)
 
     <>
     <div className="container">
