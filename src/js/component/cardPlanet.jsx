@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CardPlanets = () => {
+const CardPlanet = () => {
   return (
     <>
       <div className="lista d-flex p-1">
@@ -32,4 +32,4 @@ const CardPlanets = () => {
   );
 };
 
-export default CardPlanets;
+export default CardPlanet;

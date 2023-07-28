@@ -16,13 +16,11 @@ const CardCharacter = ({item}) => {
           className="card-img-top"
         />
         <div className="card-body">  
-          <h6 className="card-title">
-            {/* <b>Name {item.name}</b> */}
-          </h6>
+          <h5 className="card-title"> <b> Name </b> </h5>
           <div className="info d-flex flex-column">
-            <span className="card-text"><b>{item.gender}Gender</b></span>
-            <span className="card-text"><b>{item.hair_color}Hair color</b></span>
-            <span className="card-text"><b>{item.eye_color}Eye color</b></span>
+            <span className="card-text"><b>Gender</b></span>
+            <span className="card-text"><b>Hair color</b></span>
+            <span className="card-text"><b>Eye color</b></span>
           </div>
           <div className="botones d-flex justify-content-center">
           <Link to="/details/character" className="btn btn-warning">
@@ -36,5 +34,5 @@ const CardCharacter = ({item}) => {
     </>
   );
 };
-CardCharacter.propTypes = {match: propTypes.object}
+// CardCharacter.propTypes = {match: propTypes.object}
 export default CardCharacter;
