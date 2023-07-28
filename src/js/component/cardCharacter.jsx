@@ -13,7 +13,7 @@ const CardCharacter = () => {
           src={"https://starwars-visualguide.com/assets/img/characters/"+item.uid+".jpg"}
           className="card-img-top"
         />
-        <div className="card-body">  
+        <div className="card-body">
           <h6 className="card-title"> <b>{item.name} </b> </h6>
           <div className="botones d-flex justify-content-center">
           <Link to={"/detailsCharacters/"+item.uid} className="btn btn-warning">

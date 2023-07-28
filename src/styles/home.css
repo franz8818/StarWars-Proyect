@@ -9,12 +9,6 @@
     font-size: x-large;
 }
 
-.cards {
-    display: inline-block;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
 .lista {
     margin: 0px 8px 0px 9px;
     padding: 1px;

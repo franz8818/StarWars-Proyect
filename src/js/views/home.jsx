@@ -8,9 +8,9 @@ import { Context } from "../store/appContext.js";
 const Home = () => {
   const { store, actions } = useContext(Context);
   return (
-    <div className="container">
+    <div className="container-fluid">
       <h5 className="titulo ms-4"> Characters </h5>
-      <div className="cards horizontal-scrollable">
+      <div className="cards">
       <CardCharacter />
       </div>
       <h5 className="titulo ms-4"> Planets </h5>
