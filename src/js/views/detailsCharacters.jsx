@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../styles/home.css";
 
 const DetailsCharacters = () => {
@@ -21,7 +20,7 @@ const DetailsCharacters = () => {
     </div>
   </div>
  </div>
-</div>
+ </div>
     </> 
     );
   };

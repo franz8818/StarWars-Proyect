@@ -21,7 +21,7 @@ const DetailsPlanets = () => {
     </div>
   </div>
  </div>
-</div>
+ </div>
     </> 
     );
   };

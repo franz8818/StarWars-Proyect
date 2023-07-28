@@ -1,14 +1,30 @@
 /* CONTIENE TODO LO REFERENTE A "ESTILOS" DE CARDS EN HOME */
 
-.character {
-    width: 9rem;
-    height: 16.5rem;
+.container {
+    margin: 16px 0px 0px 2px;
 }
 
+.titulo {
+    margin: 16px 0px 0px 2px;
+    font-size: x-large;
+}
+
+.cards {
+    display: flex;
+}
+
+.lista {
+    margin: 0px 8px 0px 9px;
+    padding: 1px;
+}
+
+/* Medidas del interior de card */
+.character,
 .planet {
-    width: 9rem;
-    height: 16.5rem;
-    margin: 8em;
+    width: 10rem;
+    padding: 8px;
+    background-color: rgba(2, 14, 19, 0.86);
+    color: azure;
 }
 
 

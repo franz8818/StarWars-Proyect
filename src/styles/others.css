@@ -1,4 +1,4 @@
-/* CONTIENE TODO LO REFERENTE A "ESTILOS" DEL NAVBAR */
+/* CONTIENE TODO LO REFERENTE A "ESTILOS" DEL NAVBAR & FOOTER*/
 
 .dropdown-menu {
     color: rgb(255, 255, 255);
@@ -22,4 +22,9 @@
     color: #000;
     background-color: #ffc107;
     border-color: #ffc107;
+}
+
+/* font del footer*/
+p {
+    margin: 22px 0px 0px 0px;
 }
