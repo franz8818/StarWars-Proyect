@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/home.css";
+import "../../styles/others.css";
 
 const DetailsCharacters = () => {
   
@@ -13,9 +14,17 @@ const DetailsCharacters = () => {
      </div>
     <div className="col-md-8">
       <div className="card-body">
-        <h5 className="card-title"><b>Nombre</b></h5>
-        <p className="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias pariatur maxime sit voluptas! Officiis esse, deserunt fugiat animi similique voluptate culpa illum perferendis. Quam sint minima asperiores mollitia. Consectetur, explicabo.</p>
-        <p className="card-text"><small className="text-muted">features</small></p>
+        <h2 className="card-title"><b>Name</b></h2>
+        <h4 className="card-text"><small className="text-muted">features</small></h4>
+        <h5><ul>
+                <li>gender : Male</li>
+                <li>birth year : 19 BBY </li>
+                <li>height : 172cm </li>
+                <li>mass": "77"</li>
+                <li>skin_color": "Fair"</li>
+                <li>eye_color : Blue </li>
+                <li>hair_color : Blond </li>
+            </ul></h5>
       </div>
     </div>
   </div>

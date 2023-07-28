@@ -10,7 +10,9 @@
 }
 
 .cards {
-    display: flex;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .lista {

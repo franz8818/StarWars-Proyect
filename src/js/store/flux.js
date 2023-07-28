@@ -33,19 +33,21 @@ const getState = ({
                     .catch(err => console.error(err))
             },
             getPlanets: () => {
-                fetch("https://www.swapi.tech/api/planets/")
+                fetch("https://www.swapi.tech/api/planets")
                     .then(res => res.json())
                     .then(data => setStore({
-                        planetsCard: data.results
+                        planets: data.results
                     }))
+                    .catch(err => console.error(err))
             },
 
-            getIdPlanets: (id) => {
+            getPlanet: (id) => {
                 fetch("https://www.swapi.tech/api/planets/" + id)
                     .then(res => res.json())
                     .then(data => setStore({
-                        planetsDetails: data.results
+                        detailsPlanets: data.results
                     }))
+                    .catch(err => console.error(err))
             },
 
             //EJEMPLOS

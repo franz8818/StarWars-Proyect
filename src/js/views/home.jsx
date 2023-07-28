@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="container">
       <h5 className="titulo ms-4"> Characters </h5>
-      <div className="cards">
+      <div className="cards horizontal-scrollable">
       <CardCharacter />
       </div>
       <h5 className="titulo ms-4"> Planets </h5>

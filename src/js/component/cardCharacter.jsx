@@ -4,9 +4,7 @@ import { Context } from "../store/appContext";
 
 
 const CardCharacter = () => {
-  const { store, actions } = useContext(Context); 
-console.log(store.characters)
-
+  const { store, actions } = useContext(Context);
   return (
     <div className="lista p-1">
       {store.characters.map((item, id) => <div key={id}>
@@ -16,7 +14,7 @@ console.log(store.characters)
           className="card-img-top"
         />
         <div className="card-body">  
-          <h5 className="card-title"> <b>{item.name} </b> </h5>
+          <h6 className="card-title"> <b>{item.name} </b> </h6>
           <div className="botones d-flex justify-content-center">
           <Link to={"/detailsCharacters/"+id} className="btn btn-warning">
             info
@@ -29,5 +27,4 @@ console.log(store.characters)
       </div>
   );
 };
-// CardCharacter.propTypes = {match: propTypes.object}
 export default CardCharacter;
