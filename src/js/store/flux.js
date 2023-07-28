@@ -25,6 +25,7 @@ const getState = ({
                     .catch(err => console.error(err))
             },
             getCharacter: (id) => {
+                console.log(id)
                 fetch("https://www.swapi.tech/api/people/" + id)
                     .then(res => res.json())
                     .then(data => setStore({
