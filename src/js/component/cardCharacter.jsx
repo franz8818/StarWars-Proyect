@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
+import propTypes from "prop-types";
 
-const CardCharacter = () => {
+
+const CardCharacter = ({item}) => {
+  const { store, actions } = useContext(Context); 
+
   return (
     <>
     <div className="lista d-flex p-1">
@@ -10,14 +15,14 @@ const CardCharacter = () => {
           src="https://media.vandalsports.com/i/1080x1080/11-2020/202011910389_1.jpg"
           className="card-img-top"
         />
-        <div className="card-body">
+        <div className="card-body">  
           <h6 className="card-title">
-            <b>Name</b>
+            {/* <b>Name {item.name}</b> */}
           </h6>
           <div className="info d-flex flex-column">
-            <span className="card-text"><b>Gender</b></span>
-            <span className="card-text"><b>Hair color</b></span>
-            <span className="card-text"><b>Eye color</b></span>
+            <span className="card-text"><b>{item.gender}Gender</b></span>
+            <span className="card-text"><b>{item.hair_color}Hair color</b></span>
+            <span className="card-text"><b>{item.eye_color}Eye color</b></span>
           </div>
           <div className="botones d-flex justify-content-center">
           <Link to="/details/character" className="btn btn-warning">
@@ -31,5 +36,5 @@ const CardCharacter = () => {
     </>
   );
 };
-
+CardCharacter.propTypes = {match: propTypes.object}
 export default CardCharacter;

@@ -17,7 +17,7 @@ const getState = ({
         //ACCION ES UNA objeto-> DEPOSITO DE funciones -> PROVOCA UN CAMBIO EN EL STORE -> SE VE EN TODA MI APLICACION
         actions: {
             getCharacters: () => {
-                fetch("https://www.swapi.tech/api/planets/")
+                fetch("https://www.swapi.tech/api//people/")
                     .then(res => res.json())
                     .then(data => setStore({
                         characters: data.results

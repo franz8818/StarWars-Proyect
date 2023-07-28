@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home.js";
+import Home from "./views/home.js";
 
 import Details from "./views/details.js";
 import { Single } from "./views/single.js";
