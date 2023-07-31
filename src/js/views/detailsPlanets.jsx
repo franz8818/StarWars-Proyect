@@ -11,7 +11,7 @@ const DetailsPlanets = () => {
     <div className="info2 card mb-3">
   <div className="row g-2">
     <div className="img-info col-md-4">
-      <img src="https://static.wikia.nocookie.net/esstarwars/images/6/61/Mustafar-TROSGG.png" className="img-fluid rounded-start" alt="..." />
+      <img src="https://static.wikia.nocookie.net/esstarwars/images/4/4a/Alderaan.jpg/revision/latest?cb=20100723184830." className="img-fluid rounded-start" alt="..." />
      </div>
     <div className="col-md-8">
       <div className="card-body">

@@ -6,7 +6,7 @@ import { Context } from "../store/appContext";
 const CardCharacter = () => {
   const { store, actions } = useContext(Context);
   return (
-    <div className="lista p-1">
+    <div className="lista">
       {store.characters.map((item) => <div key={item.uid}>
       <div className="character card m-3">
         <img
@@ -24,7 +24,7 @@ const CardCharacter = () => {
         </div>
       </div>
       </div>)}
-      </div>
+    </div>
   );
 };
 export default CardCharacter;

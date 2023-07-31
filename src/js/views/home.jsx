@@ -8,17 +8,16 @@ import { Context } from "../store/appContext.js";
 const Home = () => {
   const { store, actions } = useContext(Context);
   return (
-    <div className="container-fluid">
-      <h5 className="titulo ms-4"> Characters </h5>
-      <div className="cards">
+  <div className="container">
+      {/* <h6 className="titulo ms-4"> Characters </h6> */}
+      <div className="row">
       <CardCharacter />
-      </div>
-      <h5 className="titulo ms-4"> Planets </h5>
-      <div className="cards">
+    </div>
+      {/* <h6 className="titulo ms-4"> Planets </h6> */}
+      <div className="row">
       <CardPlanet />
       </div>
-    </div>
-    
+  </div>
   );
 };
 export default Home;

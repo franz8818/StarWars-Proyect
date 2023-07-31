@@ -6,12 +6,21 @@
 
 .titulo {
     margin: 16px 0px 0px 2px;
-    font-size: x-large;
+    font-size: larger;
 }
+
+.row{
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 
 .lista {
     margin: 0px 8px 0px 9px;
     padding: 1px;
+    display: flex
 }
 
 /* Medidas del interior de card */
@@ -27,6 +36,7 @@
 .card-title {
     padding-bottom: -30em;
     margin: 0px;
+    font-size: small;
 }
 
 .card-body {
