@@ -6,7 +6,7 @@ import { Context } from "../store/appContext";
 const CardPlanet = () => {
   const { store, actions } = useContext(Context);
   return (
-    <div className="lista p-1">
+    <div className="lista-card p-2">
       {store.planets.map((item, id) => <div key={id}>
       <div className="planet card m-3">
         <img

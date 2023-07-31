@@ -7,7 +7,6 @@ export const Navbar = () => {
   const {store, actions}=useContext(Context) //3. CONSUMIR El Contexto
   
   return (
-
     <>
     <nav className="navbar bg-dark">
       <Link to="/">

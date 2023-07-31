@@ -6,32 +6,36 @@ import { useParams } from "react-router";
 
 const DetailsCharacters = () => {
   const { store, actions } = useContext(Context)
-  const [character, setCharacter] = useState({})
-  const params = useParams()
+  // console.log(store.character)
+  const [character, setCharacter] = useState([])
+  const params = useParams();
   useEffect(() => {
     setCharacter(actions.getCharacter(params.id))
   })
+
   return (
     <>
       <div className="container">
-        <div className="info2 card mb-3">
-          <div className="row g-2">
+        <div className="info card mb-3">
+          <div className="d-flex g-2">
             <div className="img-info col-md-4">
               <img src={"https://starwars-visualguide.com/assets/img/characters/" + params.id + ".jpg"} className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h2 className="card-title"><b>Name</b></h2>
-                <h4 className="card-text"><small className="text-muted">features</small></h4>
+                <h1 className="card-title-detail"><b>Luke Skywalker{character?.name}</b></h1>
+                <div className="card-text">
+                <h3 className="text-warning">features</h3>
                 <h5><ul>
-                  <li>gender : {character?.gender} </li>
-                  <li>birth year : 19 BBY </li>
-                  <li>height : 172cm </li>
-                  <li>mass: "77"</li>
-                  <li>skin_color": "Fair"</li>
-                  <li>eye_color : Blue </li>
-                  <li>hair_color : Blond </li>
+                  <li><b>Gender:</b> {character?.gender}Male</li>
+                  <li><b>Birth year:</b> {character?.birth_year}19 BBY</li>
+                  <li><b>Height:</b> {character?.height}172cm</li>
+                  <li><b>Mass:</b> {character?.mass}77kg</li>
+                  <li><b>Skin color:</b> {character?.skin_color}Fair</li>
+                  <li><b>Eye color:</b> {character?.eye_color}Blue</li>
+                  <li><b>Hair color:</b> {character?.hair_color}Blond</li>
                 </ul></h5>
+                </div>
               </div>
             </div>
           </div>

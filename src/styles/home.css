@@ -1,14 +1,17 @@
 /* CONTIENE TODO LO REFERENTE A "ESTILOS" DE CARDS EN HOME */
 
+/* Contenedor de todas las cards -> Character & PLanets */
 .container {
     margin: 16px 0px 0px 2px;
 }
 
+/* Título de las cards */
 .titulo {
     margin: 16px 0px 0px 2px;
     font-size: larger;
 }
 
+/* Pisición de las cards -> Con el Scroll horizontal */
 .row{
     align-items: stretch;
     flex-direction: row;
@@ -17,13 +20,14 @@
     overflow-y: hidden;
   }
 
-.lista {
+  /* Medidas del exterior de card */
+.lista-card {
     margin: 0px 8px 0px 9px;
     padding: 1px;
     display: flex
 }
 
-/* Medidas del interior de card */
+/* Interior de card */
 .character,
 .planet {
     width: 10rem;
@@ -32,36 +36,36 @@
     color: azure;
 }
 
+/* Datos de card */
+.card-body {
+    /* want to change top margin */
+    padding: 5px;
+}
 
+/* Nombre de Character o Planet */
 .card-title {
     padding-bottom: -30em;
     margin: 0px;
     font-size: small;
 }
 
-.card-body {
-    padding: 5px;
-    /* want to change top margin */
-}
-
-.info {
-    font-size: 11px;
-    padding-top: -12em;
-}
-
+/* Posición botones */
 .botones {
     margin-top: 5%;
 }
 
+/* Botón amarillo */
 .btn-warning {
     width: 3rem;
     height: 2rem;
-    font-size: 12px;
+    font-size: 11px;
     margin-right: 1em;
+    font-weight: bold;
 }
 
+/* Botón rojo */
 .btn-danger {
     width: 3rem;
     height: 2rem;
-    font-size: 12px;
+    font-size: 13px;
 }

@@ -1,11 +1,11 @@
 // gerState ES UN FUNCION QUE RETORNA UN OBJETO
 const getState = ({
-    getStore, // PARA INFO DE LA Store EN EL Contecto DE Flux
-    getActions, // PARA INFO DE LA Store EN EL Contecto DE Flux
+    getStore, // PARA INFO DE LA Store EN EL Contexto DE Flux
+    getActions, // PARA INFO DE LA Store EN EL Contexto DE Flux
     setStore // CAMBIAR EL VALOR DE ALGUN DATO QUE TENGA EN LA Store
 }) => {
     return {
-        //STORE ES UN objeto -> DEPOSITO DE estados 
+        //STORE ES UN objeto -> DEPOSITO DE "estados" 
         store: {
             // SE DEFINE UN STORE CON UN ARREGLO []
             favorites: [],
@@ -17,20 +17,16 @@ const getState = ({
         //ACCION ES UNA objeto-> DEPOSITO DE funciones -> PROVOCA UN CAMBIO EN EL STORE -> SE VE EN TODA MI APLICACION
         actions: {
             getCharacters: () => {
-                fetch("https://www.swapi.tech/api/people")
+                fetch("https://www.swapi.tech/api/people/")
                     .then(res => res.json())
-                    .then(data => setStore({
-                        characters: data.results
-                    }))
+                    .then(data => setStore({characters: data.results}))
                     .catch(err => console.error(err))
             },
             getCharacter: (id) => {
                 console.log(id)
                 fetch("https://www.swapi.tech/api/people/" + id)
                     .then(res => res.json())
-                    .then(data => setStore({
-                        detailsCharacter: data.results
-                    }))
+                    .then(data => setStore({detailsCharacter: data.results}))
                     .catch(err => console.error(err))
             },
             getPlanets: () => {

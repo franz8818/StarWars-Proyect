@@ -6,7 +6,7 @@ import { Context } from "../store/appContext";
 const CardCharacter = () => {
   const { store, actions } = useContext(Context);
   return (
-    <div className="lista">
+    <div className="lista-card p-2">
       {store.characters.map((item) => <div key={item.uid}>
       <div className="character card m-3">
         <img
