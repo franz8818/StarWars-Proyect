@@ -10,7 +10,7 @@ const CardPlanet = () => {
       {store.planets.map((item, id) => <div key={id}>
       <div className="planet card m-3">
         <img
-          src="https://static.wikia.nocookie.net/esstarwars/images/6/61/Mustafar-TROSGG.png"
+          src={"https://starwars-visualguide.com/assets/img/planets/"+item.uid+".jpg"}
           className="card-img-top"
         />
         <div className="card-body">
@@ -21,7 +21,7 @@ const CardPlanet = () => {
           <Link to={"/detailsPlanets/"+id} className="btn btn-warning">
             info
           </Link>
-          <button  className="btn btn-danger float-end" onClick={()=> {actions.addFav(charCard.name)}}>♥︎</button>
+          <button className="btn btn-danger float-end" onClick={()=> {actions.addFav(charCard.name)}}>♥︎</button>
           </div>
         </div>
       </div>

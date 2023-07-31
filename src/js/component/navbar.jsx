@@ -1,13 +1,13 @@
-import React, {useContext} from "react"; //1. IMPORTAR EL hooks useContext 
-import { Context } from "../store/appContext"; //2. IMPORTAR EL Context
+import React, {useContext} from "react"; //1. Importar el hooks useContext de React 
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext"; //2. Traer el Context
 
 export const Navbar = () => {
-  //DESESTRUCTURAR LOS DOS CONCEPTOS DE flux
-  const {store, actions}=useContext(Context) //3. CONSUMIR El Contexto
+  //Desestructurar Los dos conceptos de flux
+  const {store, actions}=useContext(Context) //3. Llamar el context(Consumir el Contexto
   
   return (
-    <>
+  <>
     <nav className="navbar bg-dark">
       <Link to="/">
       <div className="ms-5"> 
@@ -16,22 +16,22 @@ export const Navbar = () => {
       </Link>
       <div className="ml-auto"> 
       <div className="dropdown">
-  <button className="btn dropdown-toggle me-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button className="favorites me-5 btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Favorites
   </button>
-  <ul className="dropdown-menu dropdown-menu-end">
-
-    
-    <li><a className="dropdown-item" href="#">Action</a></li>
-    <li><a className="dropdown-item" href="#">Another action</a></li>
-    <li><a className="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
-        {/* <Link to="/favoritos">
-          <button className="btn btn-primary"> Favoritos </button>
-        </Link> */}
-      </div>
-    </nav>
-    </>
+  <ul className="dropdown-menu dropdown-menu-end bg-dark">
+					{store.favorites.map((item , index) =>{ 
+					return(
+						<li className="dropdown-item bg-dark text-light d-flex w-100" key={index}> <p className="float-start w-100">{item}</p>
+							<button className="text-light bg-secondary float-end mb-3" onClick={()=>actions.deleteFav(item)}>X</button>	
+						</li>
+            	)
+            }
+            )}
+          </ul>
+    </div>
+  </div>
+</nav>
+  </>
   );
 };
