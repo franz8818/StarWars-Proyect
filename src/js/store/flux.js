@@ -23,7 +23,7 @@ const getState = ({
                     .catch(err => console.error(err))
             },
             getCharacter: (uid) => {
-                
+
                 fetch("https://www.swapi.tech/api/people/" + uid)
                     .then(res => res.json())
                     .then(data => setStore({ detailsCharacter: data.results }))

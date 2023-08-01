@@ -1,10 +1,11 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 
 const CardPlanet = () => {
-  const { store, actions } = useContext(Context);
+  const { store, actions } = useContext(Context)
+  
   return (
     <div className="lista-card p-2">
       {store.planets.map((item, id) => <div key={id}>

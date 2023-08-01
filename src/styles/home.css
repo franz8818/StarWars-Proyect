@@ -2,7 +2,7 @@
 
 /* Contenedor de todas las cards -> Character & PLanets */
 .container {
-    margin: 16px 0px 0px 2px;
+    /* padding: 6px 6px 6px 6px; */
 }
 
 /* Título de las cards */
@@ -18,6 +18,8 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
+   /* ancho de la ventana gráfica.*/
+    /* width: 97vw */
   }
 
   /* Medidas del exterior de card */
