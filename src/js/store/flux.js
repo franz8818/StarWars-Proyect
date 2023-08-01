@@ -11,7 +11,7 @@ const getState = ({
             favorites: [],
             characters: [],
             planets: [],
-            datailsCharacter: {},
+            detailsCharacter: {},
             planet: {},
         },
         //ACCION ES UNA objeto-> DEPOSITO DE funciones -> PROVOCA UN CAMBIO EN EL STORE -> SE VE EN TODA MI APLICACION
@@ -26,7 +26,7 @@ const getState = ({
 
                 fetch("https://www.swapi.tech/api/people/" + uid)
                     .then(res => res.json())
-                    .then(data => setStore({ detailsCharacter: data.results }))
+                    .then(data => setStore({ detailsCharacter: data.result }))
                     .catch(err => console.error(err))
             },
             getPlanets: () => {
