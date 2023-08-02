@@ -22,7 +22,7 @@ const CardPlanet = () => {
           <Link to={"/detailsPlanets/"+id} className="btn btn-warning">
             info
           </Link>
-          <button className="btn btn-danger float-end" onClick={()=> {actions.addFav(charCard.name)}}>♥︎</button>
+          <button className="btn btn-danger float-end" onClick={()=> {actions.addFav(item.name)}}>♥︎</button>
           </div>
         </div>
       </div>

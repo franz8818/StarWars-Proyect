@@ -12,7 +12,7 @@ const getState = ({
             characters: [],
             planets: [],
             detailsCharacter: {},
-            planet: {},
+            detailsPlanet: {},
         },
         //ACCION ES UNA objeto-> DEPOSITO DE funciones -> PROVOCA UN CAMBIO EN EL STORE -> SE VE EN TODA MI APLICACION
         actions: {
@@ -32,18 +32,14 @@ const getState = ({
             getPlanets: () => {
                 fetch("https://www.swapi.tech/api/planets")
                     .then(res => res.json())
-                    .then(data => setStore({
-                        planets: data.results
-                    }))
+                    .then(data => setStore({ planets: data.results}))
                     .catch(err => console.error(err))
             },
 
-            getPlanet: (id) => {
-                fetch("https://www.swapi.tech/api/planets/" + id)
+            getPlanet: (uid) => {
+                fetch("https://www.swapi.tech/api/planets/" + uid)
                     .then(res => res.json())
-                    .then(data => setStore({
-                        detailsPlanets: data.results
-                    }))
+                    .then(data => setStore({detailsPlanet: data.result}))
                     .catch(err => console.error(err))
             },
 
