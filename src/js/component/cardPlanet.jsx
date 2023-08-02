@@ -8,7 +8,7 @@ const CardPlanet = () => {
   
   return (
     <div className="lista-card p-2">
-      {store.planets.map((item, id) => <div key={id}>
+      {store.planets.map((item) => <div key={item.uid}>
       <div className="planet card m-3">
         <img
           src={"https://starwars-visualguide.com/assets/img/planets/"+item.uid+".jpg"}
@@ -19,7 +19,7 @@ const CardPlanet = () => {
             <b>{item.name}</b>
           </h5>
           <div className="botones d-flex justify-content-center">
-          <Link to={"/detailsPlanets/"+id} className="btn btn-warning">
+          <Link to={"/detailsPlanets/"+ item.uid} className="btn btn-warning">
             info
           </Link>
           <button className="btn btn-danger float-end" onClick={()=> {actions.addFav(item.name)}}>♥︎</button>
