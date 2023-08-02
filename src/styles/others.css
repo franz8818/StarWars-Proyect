@@ -24,6 +24,11 @@
     border-color: #ffc107;
 }
 
+.lista-fav {
+    padding: 8px 8px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
 /* font del footer*/
 p {
     margin: 30px 0px 0px 0px;

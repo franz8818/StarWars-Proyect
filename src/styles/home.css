@@ -1,10 +1,5 @@
 /* CONTIENE TODO LO REFERENTE A "ESTILOS" DE CARDS EN HOME */
 
-/* Contenedor de todas las cards -> Character & PLanets */
-.container {
-    /* padding: 6px 6px 6px 6px; */
-}
-
 /* Título de las cards */
 .titulo {
     margin: 16px 0px 0px 2px;
