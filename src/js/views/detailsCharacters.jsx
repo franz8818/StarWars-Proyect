@@ -22,7 +22,7 @@ const DetailsCharacters = () => {
               <img src={"https://starwars-visualguide.com/assets/img/characters/" + uid + ".jpg"} className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-8">
-              <div className="card-body">
+              <div className="card-body-details">
                 <h1 className="card-title-detail"><b>{store.detailsCharacter.properties?.name}</b></h1>
                 <div className="card-text">
                 <h3 className="text-warning">features</h3>

@@ -23,18 +23,18 @@ const DetailsPlanets = () => {
               <img src={"https://starwars-visualguide.com/assets/img/planets/" + uid + ".jpg"} className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-8">
-              <div className="card-body">
+              <div className="card-body-details">
                 <h1 className="card-title-detail"><b>{store.detailsPlanet.properties?.name}</b></h1>
                 <div className="card-text">
                 <h3 className="text-warning">features</h3>
                 <h5><ul>
-                  <li><b>Population:</b>{store.detailsPlanet.properties?.population}</li>
-                  <li><b>Terrain:</b>{store.detailsPlanet.properties?.terrain}</li>
-                  <li><b>Climate:</b>{store.detailsPlanet.properties?.climate}</li>
-                  <li><b>Surface Water:</b>{store.detailsPlanet.properties?.surface_water}</li>
-                  <li><b>Rotation Period:</b>{store.detailsPlanet.properties?.rotation_period}</li>
-                  <li><b>Orbital Period:</b>{store.detailsPlanet.properties?.orbital_period}</li>
-                  <li><b>Diameter:</b>{store.detailsPlanet.properties?.diameter}</li>
+                  <li><b>Population:</b> {store.detailsPlanet.properties?.population}</li>
+                  <li><b>Terrain:</b> {store.detailsPlanet.properties?.terrain}</li>
+                  <li><b>Climate:</b> {store.detailsPlanet.properties?.climate}</li>
+                  <li><b>Surface Water:</b> {store.detailsPlanet.properties?.surface_water}</li>
+                  <li><b>Rotation Period:</b> {store.detailsPlanet.properties?.rotation_period}</li>
+                  <li><b>Orbital Period:</b> {store.detailsPlanet.properties?.orbital_period}</li>
+                  <li><b>Diameter:</b> {store.detailsPlanet.properties?.diameter}</li>
                 </ul></h5>
                 </div>
               </div>
