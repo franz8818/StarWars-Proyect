@@ -20,7 +20,12 @@ const DetailsPlanets = () => {
         <div className="info2 card mb-3">
           <div className="d-flex g-2">
             <div className="img-info col-md-4">
-              <img src={"https://starwars-visualguide.com/assets/img/planets/" + uid + ".jpg"} className="img-fluid rounded-start" alt="..." />
+              
+            {uid == 1 ?
+            <img src="https://static.wikia.nocookie.net/esstarwars/images/b/b0/Tatooine_TPM.png" className="img-fluid rounded-start" alt="..." />
+      : 
+      <img src={"https://starwars-visualguide.com/assets/img/planets/" + uid + ".jpg"} className="img-fluid rounded-start" alt="..." />
+      }
             </div>
             <div className="col-md-8">
               <div className="card-body-details">

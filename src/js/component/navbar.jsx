@@ -23,7 +23,7 @@ export const Navbar = () => {
 					{store.favorites.map((item , index) =>{ 
 					return(
 						<li className="dropdown-item bg-dark text-light d-flex" key={index}> <h6 className="lista-fav float-start w-100">{item}</h6>
-							<button className="btn text-light bg-secondary float-end mb-3" onClick={()=>actions.deleteFav(item)}>X</button>	
+							<a className="btn text-light bg-secondary float-end mb-3" onClick={()=>actions.deleteFav(item)}>X</a>	
 						</li>
             	)
             }

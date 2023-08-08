@@ -10,10 +10,18 @@ const CardPlanet = () => {
     <div className="lista-card p-2">
       {store.planets.map((item) => <div key={item.uid}>
       <div className="planet card m-3">
-        <img
-          src={"https://starwars-visualguide.com/assets/img/planets/"+item.uid+".jpg"}
+        {item.uid == 1 ?
+          <img
+          src= "https://static.wikia.nocookie.net/esstarwars/images/b/b0/Tatooine_TPM.png"
           className="card-img-top"
-        />
+        />    
+      :
+      
+      <img
+        src= {"https://starwars-visualguide.com/assets/img/planets/"+item.uid+".jpg"}
+        className="card-img-top"
+      />
+      }
         <div className="card-body">
           <h5 className="card-title">
             <b>{item.name}</b>
